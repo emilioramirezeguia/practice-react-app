@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import Header from "./components/header.jsx";
+import Text from "./components/text.jsx";
+import Image from "./components/image.jsx";
 import './App.css';
 
 function App() {
@@ -19,6 +21,9 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Text>{profile.name}</Text>
+      <Text>{profile.location}</Text>
+      <Image url={profile.avatar_url} />
     </div>
   );
 }

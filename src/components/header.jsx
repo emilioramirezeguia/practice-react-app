@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Text from "./text.jsx";
 import styled from "styled-components";
 
 const StyledHeader = styled.div`
@@ -11,7 +12,7 @@ function Header(props) {
 
     return(
         <StyledHeader>
-            What's your GitHub handle?
+            <Text fontSize="1.8rem">What's your GitHub handle?</Text>
         </StyledHeader>
     );
 }
