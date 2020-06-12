@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
+import Header from "./components/header.jsx";
 import './App.css';
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello {profile.name}!</h1>
+      <Header />
     </div>
   );
 }
